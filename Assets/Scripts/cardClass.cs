@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "new card", menuName ="Card")]
 public class cardClass : ScriptableObject
 {
-    public string cardName;
-    public string cardDescription;
+    public new string newname;
+    public new string description;
 
     public Sprite cardDesign;
 
@@ -16,5 +16,4 @@ public class cardClass : ScriptableObject
     public int computerPartPoint1;
     public int computerPartPoint2;
     public int computerPartPoint3;
-
 }
