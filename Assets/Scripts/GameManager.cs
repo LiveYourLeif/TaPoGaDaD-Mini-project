@@ -16,6 +16,15 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI deckSizeText;
     public TextMeshProUGUI discardPileText;
 
+    void Start()
+    {
+        ShuffleDeck();
+        for(int i = 0; i < 4; i++)
+        {
+            DrawCard();
+        }
+    }
+
     public void DrawCard()
     {
         if(deck.Count >= 1)
@@ -39,7 +48,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Shuffle()
+    public void AddDiscardPileToDeck()
     {
         if(discardPile.Count >= 1)
         {
@@ -50,6 +59,16 @@ public class GameManager : MonoBehaviour
             discardPile.Clear();
         }
         UpdateCardText();
+    }
+
+    void ShuffleDeck()
+    {
+        for (int i = 0; i < deck.Count; i++) {
+        Card temp = deck[i];
+        int randomIndex = Random.Range(i, deck.Count);
+        deck[i] = deck[randomIndex];
+        deck[randomIndex] = temp;
+     }
     }
 
     public void UpdateCardText()

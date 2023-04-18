@@ -15,9 +15,9 @@ MonoBehaviour:
   newname: Carrots
   description: Good for your eyesight!
   cardDesign: {fileID: 21300000, guid: fb68e09b034c40949976514c54d16dfb, type: 3}
-  computerPart1: 
-  computerPart2: 
-  computerPart3: 
-  computerPartPoint1: 0
-  computerPartPoint2: 0
-  computerPartPoint3: 0
+  computerPart1: Keyboard
+  computerPart2: Monitor
+  computerPart3: Speaker
+  computerPartPoint1: 2
+  computerPartPoint2: 4
+  computerPartPoint3: 3

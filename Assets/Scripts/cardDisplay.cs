@@ -7,7 +7,7 @@ using TMPro;
 public class cardDisplay : MonoBehaviour
 {
 
-    public cardClass card;
+    public cardClass card_class;
     public TextMeshProUGUI cardName;
     public TextMeshProUGUI cardDescriptionText;
 
@@ -22,9 +22,9 @@ public class cardDisplay : MonoBehaviour
 
     void Start()
     {
-        cardName.text = card.name;
-        cardDescriptionText.text = card.description;
-        artworkImageOfCard.sprite = card.cardDesign;
+        cardName.text = card_class.name;
+        cardDescriptionText.text = card_class.description;
+        artworkImageOfCard.sprite = card_class.cardDesign;
     }
 
 

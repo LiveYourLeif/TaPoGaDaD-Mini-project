@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1076894836689328670}
   - component: {fileID: 3366032372804743207}
   - component: {fileID: 5351166286062472231}
+  - component: {fileID: 8740927051615580259}
   m_Layer: 0
   m_Name: PlayCardSlots
   m_TagString: PlayCardSlot
@@ -72,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -827931763
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: e612a992e6ab39541ad72adc9fd0b9e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -133,3 +134,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8740927051615580259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931859849944433183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfc8662b8cdd4dd4094fba1ea87d7492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

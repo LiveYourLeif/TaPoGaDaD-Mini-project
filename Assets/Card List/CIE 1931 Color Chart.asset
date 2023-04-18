@@ -15,9 +15,9 @@ MonoBehaviour:
   newname: CIE ColorSpace
   description: I CAN SEE FOREVER
   cardDesign: {fileID: 21300000, guid: 6663e8d716851b2409f775d55afe4c4f, type: 3}
-  computerPart1: 
-  computerPart2: 
-  computerPart3: 
-  computerPartPoint1: 0
-  computerPartPoint2: 0
-  computerPartPoint3: 0
+  computerPart1: CPU/GPU
+  computerPart2: Power Supply
+  computerPart3: Case
+  computerPartPoint1: 5
+  computerPartPoint2: 2
+  computerPartPoint3: 2

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6988598092864220117}
   - component: {fileID: 5610281137622441056}
   - component: {fileID: 6419793502459757209}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,6 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9080b5d330f2f7343834541747976d1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assignedSlot: 0
+  dropPos: {fileID: 0}
 --- !u!1 &6734552384874828836
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +279,7 @@ GameObject:
   - component: {fileID: 1858602799456526732}
   - component: {fileID: 7700439998913447018}
   - component: {fileID: 2077085800014099408}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +414,7 @@ GameObject:
   - component: {fileID: 789972228786939902}
   - component: {fileID: 6214850286147906521}
   - component: {fileID: 7530282933016564119}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +490,7 @@ GameObject:
   - component: {fileID: 7918269631730505413}
   - component: {fileID: 8199385885350979885}
   - component: {fileID: 3991359241328589122}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
