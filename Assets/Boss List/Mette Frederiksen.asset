@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newname: Mette Frederiksen
   description: Gamingminister og hardcore minkslayer
-  cardDesign: {fileID: 0}
-  targetScore: 14
+  bossDesign: {fileID: 0}
+  targetScore: 7
   pcPart1: Power Supply
   pcPart2: Cooler
   pcPart3: Keyboard

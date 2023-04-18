@@ -6,13 +6,20 @@ public class DragAndDrop : MonoBehaviour
 {
     private Vector3 _dragOffset;
     private Camera _cam;
-    private bool checkCollision = false;
     public int assignedSlot;
     [SerializeField] private Transform dropPos;
+    public GameObject tempObject;
+    public bool isPlaced = false;
+
+    void Start()
+    {
+    
+    }
     
     void OnMouseDown()
     {
         _dragOffset = transform.position - GetMousePos();
+        isPlaced = false;
     }
 
     void OnMouseDrag()
@@ -23,6 +30,7 @@ public class DragAndDrop : MonoBehaviour
     void OnMouseUp()
     {
         this.gameObject.transform.position = dropPos.position;
+        isPlaced = true;
     }
 
     Vector3 GetMousePos()
@@ -34,25 +42,10 @@ public class DragAndDrop : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if(other.gameObject.tag == "PlayCardSlot")
+        if(other.gameObject.tag == "PlayCardSlot" && other.gameObject.GetComponent<playedCardSlot>().isFilled == false)
         {
             dropPos = other.gameObject.transform;
-            assignedSlot = 1;
-        }
-        else if(other.gameObject.tag == "PlayCardSlot2")
-        {
-            dropPos = other.gameObject.transform;
-            assignedSlot = 2;
-        }
-        else if(other.gameObject.tag == "PlayCardSlot3")
-        {
-            dropPos = other.gameObject.transform;
-            assignedSlot = 3;
-        }
-        else if(other.gameObject.tag == "PlayCardSlot4")
-        {
-            dropPos = other.gameObject.transform;
-            assignedSlot = 4;
+            tempObject = other.gameObject;
         }
     }
 

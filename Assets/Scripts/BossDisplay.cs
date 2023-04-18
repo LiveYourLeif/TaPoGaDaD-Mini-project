@@ -24,7 +24,7 @@ public class BossDisplay : MonoBehaviour
         bossName.text = boss.newname;
         bossDescriptionText.text = boss.description;
         //artworkImageOfBoss.sprite = boss.bossDesign;
-        scoreToBeat.text = "TARGET SCORE: " + boss.targetScore.ToString();
+        scoreToBeat.text = boss.targetScore.ToString();
 
         part1.text = boss.pcPart1;
         part2.text = boss.pcPart2;
