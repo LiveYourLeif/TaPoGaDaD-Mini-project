@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "new boss", menuName ="Boss")]
-public class BossClass : ScriptableObject
+public class ClientClass : ScriptableObject
 {
     public string newname;
     public string description;
