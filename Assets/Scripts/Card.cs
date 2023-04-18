@@ -15,7 +15,7 @@ public class Card : MonoBehaviour
         gm = FindObjectOfType<GameManager>();
     }
 
-    private void OnMouseDown()
+    /*private void OnMouseDown()
     {
         if(hasBeenPlayed == false)
         {
@@ -24,7 +24,7 @@ public class Card : MonoBehaviour
             gm.availableCardSlots[handIndex] = true;
             Invoke("MoveToDiscard", 1f);
         }
-    }
+    }*/
 
     void MoveToDiscard()
     {

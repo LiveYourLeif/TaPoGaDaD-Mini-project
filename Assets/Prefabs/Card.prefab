@@ -116,9 +116,10 @@ GameObject:
   - component: {fileID: 2927276713603146465}
   - component: {fileID: -2197778280357380700}
   - component: {fileID: 4330891191898423141}
+  - component: {fileID: 3084814722276382411}
   m_Layer: 0
   m_Name: Card
-  m_TagString: Untagged
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +133,7 @@ Transform:
   m_GameObject: {fileID: 6325632897899486850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 4, z: 1}
+  m_LocalScale: {x: 1.5, y: 2.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8350162017632867997}
@@ -253,6 +254,18 @@ MonoBehaviour:
   point1: {fileID: 0}
   point2: {fileID: 0}
   point3: {fileID: 0}
+--- !u!114 &3084814722276382411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6325632897899486850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9080b5d330f2f7343834541747976d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6734552384874828836
 GameObject:
   m_ObjectHideFlags: 0
