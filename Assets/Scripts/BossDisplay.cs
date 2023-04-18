@@ -7,7 +7,7 @@ using TMPro;
 public class BossDisplay : MonoBehaviour
 {
 
-    public ClientClass boss;
+    public BossClass boss;
     public TextMeshProUGUI bossName;
     public TextMeshProUGUI bossDescriptionText;
 

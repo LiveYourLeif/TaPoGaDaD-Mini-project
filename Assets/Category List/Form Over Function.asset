@@ -10,16 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb38e74c12fb2504481b18e43d394fd7, type: 3}
-  m_Name: MLG Gamer Mode
+  m_Name: Form Over Function
   m_EditorClassIdentifier: 
-  category: MLG Gamer Mode
-  description: "+1 to Keyboard, CPU/GPU, Speaker, Mouse if: 3+ \n\nOtherwise: -1"
-  conditionMet: 1
-  m_CPU: 1
-  m_Power: 0
-  m_Cooler: 0
-  m_Case: 0
-  m_Mouse: 1
-  m_Keyboard: 1
-  m_Monitor: 0
-  m_Speaker: 1
+  category: Form Over Function
+  description: '+1 to Monitor / Case / Keyboard / Mouse if: +3
+
+
+    Otherwise: -1'
+  conditionType: 1

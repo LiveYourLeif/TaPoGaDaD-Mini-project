@@ -12,6 +12,7 @@ public class RoundManager : MonoBehaviour
     public GameObject[] cards;
     public string[] bossParts;
     public GameObject boss;
+    public GameObject category;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class RoundManager : MonoBehaviour
         {
             print("Card slots: " + card.name);
         }
+        category = GameObject.FindWithTag("Category");
     }
 
     void Update()
@@ -101,6 +103,7 @@ public class RoundManager : MonoBehaviour
 
                 if(bossParts[i] == part1)
                 {
+                    part1Score = categoryModifier(bossParts[i], part1Score);
                     score += part1Score;
                     print("Match found: " + part1);
                     print("Points for part: " + part1Score);
@@ -109,6 +112,7 @@ public class RoundManager : MonoBehaviour
                 }
                 else if(bossParts[i] == part2)
                 {
+                    part2Score = categoryModifier(bossParts[i], part2Score);
                     score += part2Score;
                     print("Match found: " + part2);
                     print("Points for part: " + part2Score);
@@ -117,14 +121,16 @@ public class RoundManager : MonoBehaviour
                 }
                 else if(bossParts[i] == part3)
                 {
-                    score += part3Score;
+                    part3Score = categoryModifier(bossParts[i], part3Score);
                     print("Match found: " + part3);
                     print("Points for part: " + part3Score);
                     print("Total score: " + score);
+                    score += categoryModifier(part2, part2Score);
                     continue;
                 }
                 else
                 {
+                    score += categoryModifier(bossParts[i], 0);
                     print("No match! No score!");
                 }
             }
@@ -144,5 +150,50 @@ public class RoundManager : MonoBehaviour
         {
             print("Not all cards have been assigned!");
         }
+    }
+
+    int categoryModifier(string part, int partPoints)
+    {
+        int c = category.GetComponent<CategoryDisplay>().category_class.conditionType;
+        switch(c) 
+        {
+        // MLG Gamer Mode
+        case 0:
+        if(part == "CPU/GPU" || part == "Mouse" || part == "Keyboard" || part == "Speaker")
+        {
+            if(partPoints >= 3)
+            {
+                print("Condition met for: " + part + "! Points go from: " + partPoints + " to " + (partPoints + 1));
+                return partPoints + 1;
+            }
+            else
+            {
+                print("Condition failed for: " + part + "! Points go from: " + partPoints + " to " + (partPoints - 1));
+                return partPoints - 1;
+            }
+        }
+            break;
+
+        // MLG Gamer Mode
+        case 1:
+        if(part == "Monitor" || part == "Mouse" || part == "Keyboard" || part == "Case")
+        {
+            if(partPoints >= 3)
+            {
+                print("Condition met for: " + part + "! Points go from: " + partPoints + " to " + (partPoints + 1));
+                return partPoints + 1;
+            }
+            else
+            {
+                print("Condition failed for: " + part + "! Points go from: " + partPoints + " to " + (partPoints - 1));
+                return partPoints - 1;
+            }
+        }
+            break;
+        // No category
+        default:
+            return partPoints;
+        }
+        return partPoints;
     }
 }

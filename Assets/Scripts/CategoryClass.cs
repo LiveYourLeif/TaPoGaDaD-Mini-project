@@ -6,17 +6,9 @@ using UnityEngine;
 public class CategoryClass : ScriptableObject
 {
     public string category;
-    [TextArea(15,5)]
+    [TextArea(10,5)]
     public string description;
-    public bool conditionMet;
+    public int conditionType;
 
     // m = "modifer"
-    public int m_CPU;
-    public int m_Power;
-    public int m_Cooler;
-    public int m_Case;
-    public int m_Mouse;
-    public int m_Keyboard;
-    public int m_Monitor;
-    public int m_Speaker;
 }

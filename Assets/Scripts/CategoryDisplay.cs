@@ -6,7 +6,7 @@ using TMPro;
 
 public class CategoryDisplay : MonoBehaviour
 {
-    public cardClass category_class;
+    public CategoryClass category_class;
     public TextMeshProUGUI categoryName;
     public TextMeshProUGUI categoryDescription;
 
