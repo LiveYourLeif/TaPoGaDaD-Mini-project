@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public List<Card> deck = new List<Card>();
     public List<Card> discardPile = new List<Card>();
     public List<Card> hand = new List<Card>();
+    public List<CategoryClass> categories = new List<CategoryClass>();
 
     public Transform[] cardslots;
     public bool[] availableCardSlots;
@@ -97,9 +98,18 @@ public class GameManager : MonoBehaviour
     }
     public void p_rerollChallenge()
     {
-        
+        CategoryDisplay c = GameObject.FindWithTag("Category").GetComponent<CategoryDisplay>();
+        CategoryClass new_c = categories[Random.Range(0, categories.Count)];
+        while(c.category_class == new_c)
+        {
+            new_c = categories[Random.Range(0, categories.Count)];
+            print(new_c);
+        }
+
+        c.category_class = new_c;
+        c.updateCategory();
     }
-    public void p_rerollCategories()
+    public void p_rerollParts()
     {
         
     }

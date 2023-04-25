@@ -13,6 +13,11 @@ public class CategoryDisplay : MonoBehaviour
 
     void Start()
     {
+        updateCategory();
+    }
+
+    public void updateCategory()
+    {
         categoryName.text = category_class.name;
         categoryDescription.text = category_class.description;
     }

@@ -516,6 +516,9 @@ MonoBehaviour:
   - {fileID: 1592312450}
   discardPile: []
   hand: []
+  categories:
+  - {fileID: 11400000, guid: ada360777904bad4dbae3fd63c12c843, type: 2}
+  - {fileID: 11400000, guid: d9946b1f6e2dd374792284687d4543a9, type: 2}
   cardslots:
   - {fileID: 298173651}
   - {fileID: 391438180}
@@ -891,7 +894,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 509952500}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 463155073}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: p_rerollChallenge
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &509952500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3186,7 +3201,7 @@ PrefabInstance:
     - target: {fileID: 6005101045788814722, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: category_class
       value: 
-      objectReference: {fileID: 11400000, guid: ada360777904bad4dbae3fd63c12c843, type: 2}
+      objectReference: {fileID: 11400000, guid: d9946b1f6e2dd374792284687d4543a9, type: 2}
     - target: {fileID: 8339632814906001049, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -4021,7 +4036,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Reroll
 
-    Categories'
+    Parts'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4048,8 +4063,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
