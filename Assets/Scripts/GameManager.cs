@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public List<Card> discardPile = new List<Card>();
     public List<Card> hand = new List<Card>();
     public List<CategoryClass> categories = new List<CategoryClass>();
+    public List<string> parts = new List<string> {"CPU/GPU", "Case", "Power Supply", "Cooler", "Mouse", "Monitor", "Speaker", "Keyboard"};
 
     public Transform[] cardslots;
     public bool[] availableCardSlots;
@@ -111,7 +112,21 @@ public class GameManager : MonoBehaviour
     }
     public void p_rerollParts()
     {
-        
+        BossDisplay b = GameObject.FindWithTag("Boss").GetComponent<BossDisplay>();
+        int index = Random.Range(0, parts.Count);
+        b.part1.text = parts[index];
+        parts.RemoveAt(index);
+        index = Random.Range(0, parts.Count);
+        b.part2.text = parts[index];
+        parts.RemoveAt(index);
+        index = Random.Range(0, parts.Count);
+        b.part3.text = parts[index];
+        parts.RemoveAt(index);
+        index = Random.Range(0, parts.Count);
+        b.part4.text = parts[index];
+        parts.RemoveAt(index);
+
+        parts = new List<string> {"CPU/GPU", "Case", "Power Supply", "Cooler", "Mouse", "Monitor", "Speaker", "Keyboard"};
     }
 
 }

@@ -519,6 +519,15 @@ MonoBehaviour:
   categories:
   - {fileID: 11400000, guid: ada360777904bad4dbae3fd63c12c843, type: 2}
   - {fileID: 11400000, guid: d9946b1f6e2dd374792284687d4543a9, type: 2}
+  parts:
+  - CPU/GPU
+  - Case
+  - Power Supply
+  - Cooler
+  - Mouse
+  - Monitor
+  - Speaker
+  - Keyboard
   cardslots:
   - {fileID: 298173651}
   - {fileID: 391438180}
@@ -1350,7 +1359,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 808353334}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 463155073}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: p_rerollParts
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &808353334
 MonoBehaviour:
   m_ObjectHideFlags: 0

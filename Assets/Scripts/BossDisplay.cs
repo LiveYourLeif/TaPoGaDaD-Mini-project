@@ -33,6 +33,12 @@ public class BossDisplay : MonoBehaviour
 
     }
 
-
+    void powerUp()
+    {
+        boss.pcPart1 = part1.text;
+        boss.pcPart2 = part2.text;
+        boss.pcPart3 = part3.text;
+        boss.pcPart4 = part4.text;
+    }
 }
 
