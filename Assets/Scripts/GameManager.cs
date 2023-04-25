@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     public List<Card> deck = new List<Card>();
     public List<Card> discardPile = new List<Card>();
+    public List<Card> hand = new List<Card>();
 
     public Transform[] cardslots;
     public bool[] availableCardSlots;
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
                     randCard.hasBeenPlayed = false;
                     availableCardSlots[i] = false;
                     deck.Remove(randCard);
+                    hand.Add(randCard);
                     UpdateCardText();
                     return;
                 } 
@@ -77,8 +79,29 @@ public class GameManager : MonoBehaviour
         discardPileText.text = discardPile.Count.ToString();
     }
 
-    public void cardPlaced()
+    public void p_rerollHand()
     {
+        foreach(Card card in hand)
+            {
+                deck.Add(card);
+                card.transform.position = new Vector3(-21.3400002f,-7.67999983f,0);
+            }
+        hand.Clear();
+        ShuffleDeck();
+        for(int i = 0; i < 4; i++)
+        {
+            availableCardSlots[i] = true;
+            DrawCard();
+        }
 
     }
+    public void p_rerollChallenge()
+    {
+        
+    }
+    public void p_rerollCategories()
+    {
+        
+    }
+
 }
