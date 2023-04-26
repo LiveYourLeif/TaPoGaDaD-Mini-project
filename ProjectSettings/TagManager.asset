@@ -42,11 +42,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: CardSlots
-    uniqueID: 3467035533
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: CardSlots
+    uniqueID: 3467035533
     locked: 0
   - name: Cards
     uniqueID: 3869668621
