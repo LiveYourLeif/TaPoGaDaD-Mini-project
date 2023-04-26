@@ -9,14 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91544006523e30443baaa9ab90882934, type: 3}
-  m_Name: Roy Ensmoj
+  m_Script: {fileID: 11500000, guid: eb38e74c12fb2504481b18e43d394fd7, type: 3}
+  m_Name: Factory Settings
   m_EditorClassIdentifier: 
-  newname: Roy Ensmoj
-  description: Ultimate Gamer
-  bossDesign: {fileID: 0}
-  targetScore: 10
-  pcPart1: CPU/GPU
-  pcPart2: Cooler
-  pcPart3: Keyboard
-  pcPart4: Monitor
+  category: Factory Settings
+  description: No change.
+  conditionType: 8

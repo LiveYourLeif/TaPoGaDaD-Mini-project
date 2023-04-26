@@ -13,6 +13,7 @@ public class RoundManager : MonoBehaviour
     public string[] bossParts;
     public GameObject boss;
     public GameObject category;
+    bool oppositeDay = false;
 
     void Start()
     {
@@ -137,14 +138,30 @@ public class RoundManager : MonoBehaviour
             
             print("TOTAL SCORE: " + score);
             print("SCORE TO BEAT: " + target);
-            if(score < target)
+
+            if(oppositeDay == false)
             {
-                print("YOU LOSE!");
+                if(score < target)
+                {
+                    print("YOU LOSE!");
+                }
+                else
+                {
+                    print("YOU WIN!");
+                }
             }
             else
             {
-                print("YOU WIN!");
+                if(score == 0)
+                {
+                    print("YOU WIN!");
+                }
+                else
+                {
+                    print("YOU LOSE!");
+                }
             }
+            oppositeDay = false;
         }
         else
         {
@@ -172,7 +189,7 @@ public class RoundManager : MonoBehaviour
                 return partPoints - 1;
             }
         }
-            break;
+        break;
 
         // MLG Gamer Mode
         case 1:
@@ -189,8 +206,93 @@ public class RoundManager : MonoBehaviour
                 return partPoints - 1;
             }
         }
-            break;
-        // No category
+        break;
+        // Function Over Form
+        case 2:
+        if(part == "CPU/GPU" || part == "Power Supply" || part == "Cooler" || part == "Speaker")
+        {
+            if(partPoints >= 3)
+            {
+                print("Condition met for: " + part + "! Points go from: " + partPoints + " to " + (partPoints + 1));
+                return partPoints + 1;
+            }
+            else
+            {
+                print("Condition failed for: " + part + "! Points go from: " + partPoints + " to " + (partPoints - 1));
+                return partPoints - 1;
+            }
+        }
+        break;
+
+        // PC Master Race
+        case 3:
+        if(part == "CPU/GPU" || part == "Case" || part == "Cooler" || part == "Power Supply")
+        {
+            if(partPoints >= 3)
+            {
+                print("Condition met for: " + part + "! Points go from: " + partPoints + " to " + (partPoints + 1));
+                return partPoints + 1;
+            }
+            else
+            {
+                print("Condition failed for: " + part + "! Points go from: " + partPoints + " to " + (partPoints - 1));
+                return partPoints - 1;
+            }
+        }
+        break;
+
+        // Desert Island Gaming
+        case 4:
+        if(part == "Cooler" || part == "Case" || part == "Monitor" || part == "Mouse")
+        {
+            if(partPoints >= 3)
+            {
+                print("Condition met for: " + part + "! Points go from: " + partPoints + " to " + (partPoints + 1));
+                return partPoints + 1;
+            }
+            else
+            {
+                print("Condition failed for: " + part + "! Points go from: " + partPoints + " to " + (partPoints - 1));
+                return partPoints - 1;
+            }
+        }
+        break;
+
+        // Urban Gaming
+        case 5:
+        if(part == "CPU/GPU" || part == "Cooler" || part == "Keyboard" || part == "Speaker")
+        {
+            if(partPoints >= 3)
+            {
+                print("Condition met for: " + part + "! Points go from: " + partPoints + " to " + (partPoints + 1));
+                return partPoints + 1;
+            }
+            else
+            {
+                print("Condition failed for: " + part + "! Points go from: " + partPoints + " to " + (partPoints - 1));
+                return partPoints - 1;
+            }
+        }
+        break;
+
+        //  Opposite Day
+        case 6:
+            oppositeDay = true;
+        break;
+
+        //  Binary System Update
+        case 7:
+            if(partPoints >= 3)
+            {
+                return 5;
+            }
+            else if(partPoints <= 2)
+            {
+                return 0;
+            }
+        break;
+
+        // Factory Settings
         default:
             return partPoints;
         }

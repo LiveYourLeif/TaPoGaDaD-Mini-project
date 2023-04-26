@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91544006523e30443baaa9ab90882934, type: 3}
   m_Name: Harold
   m_EditorClassIdentifier: 
-  newname: 
-  description: 
+  newname: Harold
+  description: His Game is Hiding the Pain
   bossDesign: {fileID: 0}
-  targetScore: 0
-  pcPart1: 
-  pcPart2: 
-  pcPart3: 
-  pcPart4: 
+  targetScore: 8
+  pcPart1: Power Supply
+  pcPart2: Case
+  pcPart3: Mouse
+  pcPart4: Speaker

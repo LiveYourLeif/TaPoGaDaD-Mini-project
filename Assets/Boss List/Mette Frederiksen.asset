@@ -15,7 +15,7 @@ MonoBehaviour:
   newname: Mette Frederiksen
   description: Denmark's Gamingminister
   bossDesign: {fileID: 0}
-  targetScore: 7
+  targetScore: 4
   pcPart1: Power Supply
   pcPart2: Cooler
   pcPart3: Keyboard

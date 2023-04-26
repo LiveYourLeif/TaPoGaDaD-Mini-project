@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: PC Master Race
   m_EditorClassIdentifier: 
   category: PC Master Race
-  description: '+1 to CPU/GPU, Case, Cooler, Power if: 3+
+  description: '+1 to CPU/GPU, Case, Cooler, Power Supply if: 3+
 
 
-    Otherwise: -1'
+    Otherwise:
+    -1'
   conditionType: 3
