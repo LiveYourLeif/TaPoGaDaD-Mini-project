@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Cooler Bag
   m_EditorClassIdentifier: 
-  description: Much cooler than YOUR bag, STACY
-  cardDesign: {fileID: 21300000, guid: ddc3479336ad56245bef3b890e40e086, type: 3}
+  cardDesign: {fileID: 21300000, guid: f1b8013c0a87ea6438a4b0727fe61f3f, type: 3}
   computerPart1: Monitor
   computerPart2: Cooler
   computerPart3: Case

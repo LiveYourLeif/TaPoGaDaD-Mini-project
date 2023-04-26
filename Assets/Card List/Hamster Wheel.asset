@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Hamster Wheel
   m_EditorClassIdentifier: 
-  description: Oh lord, he runnin'
-  cardDesign: {fileID: 21300000, guid: f63df8356d7c2ec4980fd3cf0eec622d, type: 3}
+  cardDesign: {fileID: 21300000, guid: 35949024ccd1ef54d846234bdf9122fe, type: 3}
   computerPart1: Power Supply
   computerPart2: Cooler
   computerPart3: Speaker

@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Ancient TV
   m_EditorClassIdentifier: 
-  description: Do NOT mix up the AV cables. You will perish.
-  cardDesign: {fileID: 0}
+  cardDesign: {fileID: 21300000, guid: 8c865ea134c1e034296eb6925629bab0, type: 3}
   computerPart1: Case
   computerPart2: Monitor
   computerPart3: Speaker

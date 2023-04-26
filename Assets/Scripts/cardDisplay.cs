@@ -8,7 +8,6 @@ public class cardDisplay : MonoBehaviour
 {
 
     public cardClass card_class;
-    public TextMeshProUGUI cardDescriptionText;
 
     public Image artworkImageOfCard;
     public TextMeshProUGUI part1;
@@ -21,7 +20,6 @@ public class cardDisplay : MonoBehaviour
 
     void Start()
     {
-        cardDescriptionText.text = card_class.description;
         artworkImageOfCard.sprite = card_class.cardDesign;
     }
 

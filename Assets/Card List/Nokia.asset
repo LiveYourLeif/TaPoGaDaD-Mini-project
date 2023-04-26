@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Nokia
   m_EditorClassIdentifier: 
-  description: Waiting to meet an unstoppable force
-  cardDesign: {fileID: 21300000, guid: 5d8cd130c255aa5429041fa0d3c68b74, type: 3}
+  cardDesign: {fileID: 21300000, guid: 5fdc5819be6030f4fb98e15d214d24a6, type: 3}
   computerPart1: Keyboard
   computerPart2: Monitor
   computerPart3: Speaker

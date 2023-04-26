@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Lightsaber
   m_EditorClassIdentifier: 
-  description: Wielded by Legolas in Star Trek
-  cardDesign: {fileID: 21300000, guid: 3b6a65889aa213844af933c7b9a03b1a, type: 3}
+  cardDesign: {fileID: 21300000, guid: 1c997d5cb80f0394c99b040b0e06f247, type: 3}
   computerPart1: CPU/GPU
   computerPart2: Power Supply
   computerPart3: Mouse

@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Blackberry
   m_EditorClassIdentifier: 
-  description: Wait you... you still have this? lmao
-  cardDesign: {fileID: 21300000, guid: 8f0205d08ac6edf4d8a75d2b02180772, type: 3}
+  cardDesign: {fileID: 21300000, guid: 76ff7d76d0997144fa9d5cb825eaa708, type: 3}
   computerPart1: Keyboard
   computerPart2: Monitor
   computerPart3: Speaker

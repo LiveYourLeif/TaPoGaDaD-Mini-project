@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: 70Inch LED
   m_EditorClassIdentifier: 
-  description: If it falls on you, you get sucked into the TV world
-  cardDesign: {fileID: 0}
+  cardDesign: {fileID: 21300000, guid: 74e134ac8f0ba7c41b41bbfc070aba8d, type: 3}
   computerPart1: CPU/GPU
   computerPart2: Monitor
   computerPart3: Speaker

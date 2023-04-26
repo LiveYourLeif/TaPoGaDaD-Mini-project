@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: WiiMote
   m_EditorClassIdentifier: 
-  description: '*insert Wii Sports Theme*'
-  cardDesign: {fileID: 21300000, guid: 92cc59523bca99b4fa9ad8c42f7c0932, type: 3}
+  cardDesign: {fileID: 21300000, guid: 4fc4a961d25e21c4fb1252a2ea439d0d, type: 3}
   computerPart1: Mouse
   computerPart2: Keyboard
   computerPart3: Speaker

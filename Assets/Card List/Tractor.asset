@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Tractor
   m_EditorClassIdentifier: 
-  description: Everybody gangsta 'til the PC with a tractor in it
-  cardDesign: {fileID: 21300000, guid: 7c34392b7a1c33d478fda90eb69115b6, type: 3}
+  cardDesign: {fileID: 21300000, guid: 22ef466bc2f09f54c9d14156ff300044, type: 3}
   computerPart1: CPU/GPU
   computerPart2: Power Supply
   computerPart3: Case

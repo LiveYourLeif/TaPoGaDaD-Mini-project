@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Fusion Reactor
   m_EditorClassIdentifier: 
-  description: Also known as the non-portable microwave
-  cardDesign: {fileID: 21300000, guid: a4ea3a5a2ed70c04fbb9e5d396abd93d, type: 3}
+  cardDesign: {fileID: 21300000, guid: a8a9c248a15075342bc77b9853d8838b, type: 3}
   computerPart1: Power Supply
   computerPart2: Cooler
   computerPart3: Speaker
