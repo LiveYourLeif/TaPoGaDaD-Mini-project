@@ -17,6 +17,6 @@ MonoBehaviour:
   computerPart1: CPU/GPU
   computerPart2: Power Supply
   computerPart3: Case
-  computerPartPoint1: 2
-  computerPartPoint2: 5
+  computerPartPoint1: 5
+  computerPartPoint2: 2
   computerPartPoint3: 2

@@ -15,8 +15,8 @@ MonoBehaviour:
   description: Shiny end goes in the eyes of enemies
   cardDesign: {fileID: 21300000, guid: b34b315624d1b4f4daa6daf4bbd7ba7f, type: 3}
   computerPart1: CPU/GPU
-  computerPart2: Mouse
-  computerPart3: Monitor
-  computerPartPoint1: 1
-  computerPartPoint2: 5
-  computerPartPoint3: 3
+  computerPart2: Power Supply
+  computerPart3: Mouse
+  computerPartPoint1: 3
+  computerPartPoint2: 1
+  computerPartPoint3: 5

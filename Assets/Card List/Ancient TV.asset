@@ -17,6 +17,6 @@ MonoBehaviour:
   computerPart1: Case
   computerPart2: Monitor
   computerPart3: Speaker
-  computerPartPoint1: 4
-  computerPartPoint2: 3
-  computerPartPoint3: 2
+  computerPartPoint1: 3
+  computerPartPoint2: 5
+  computerPartPoint3: 1

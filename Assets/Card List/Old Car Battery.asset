@@ -18,5 +18,5 @@ MonoBehaviour:
   computerPart2: Power Supply
   computerPart3: Case
   computerPartPoint1: 1
-  computerPartPoint2: 4
-  computerPartPoint3: 4
+  computerPartPoint2: 3
+  computerPartPoint3: 5

@@ -17,6 +17,6 @@ MonoBehaviour:
   computerPart1: Mouse
   computerPart2: Keyboard
   computerPart3: Speaker
-  computerPartPoint1: 4
-  computerPartPoint2: 2
+  computerPartPoint1: 5
+  computerPartPoint2: 1
   computerPartPoint3: 3

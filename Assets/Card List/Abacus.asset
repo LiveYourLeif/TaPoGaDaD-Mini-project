@@ -17,6 +17,6 @@ MonoBehaviour:
   computerPart1: CPU/GPU
   computerPart2: Keyboard
   computerPart3: Monitor
-  computerPartPoint1: 4
-  computerPartPoint2: 4
-  computerPartPoint3: 1
+  computerPartPoint1: 2
+  computerPartPoint2: 5
+  computerPartPoint3: 2

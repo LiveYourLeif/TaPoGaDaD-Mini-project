@@ -18,5 +18,5 @@ MonoBehaviour:
   computerPart2: Keyboard
   computerPart3: Speaker
   computerPartPoint1: 3
-  computerPartPoint2: 5
-  computerPartPoint3: 1
+  computerPartPoint2: 4
+  computerPartPoint3: 2

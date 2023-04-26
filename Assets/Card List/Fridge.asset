@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: It crushes ice! Can YOUR fridge crush ice?!
   cardDesign: {fileID: 21300000, guid: ea96558de1ad07541ac17202d12b09d9, type: 3}
-  computerPart1: CPU/GPU
+  computerPart1: Keyboard
   computerPart2: Cooler
   computerPart3: Case
   computerPartPoint1: 3

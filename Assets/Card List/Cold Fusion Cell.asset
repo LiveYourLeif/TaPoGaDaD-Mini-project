@@ -18,5 +18,5 @@ MonoBehaviour:
   computerPart2: Cooler
   computerPart3: Mouse
   computerPartPoint1: 5
-  computerPartPoint2: 4
-  computerPartPoint3: 0
+  computerPartPoint2: 3
+  computerPartPoint3: 1
