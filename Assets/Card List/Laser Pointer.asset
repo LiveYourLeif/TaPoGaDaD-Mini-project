@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Laser Pointer
   m_EditorClassIdentifier: 
-  newname: Laser Pointer
   description: Shiny end goes in the eyes of enemies
-  cardDesign: {fileID: 21300000, guid: cfbdb178b9eea9e4dbe497597ac30810, type: 3}
+  cardDesign: {fileID: 21300000, guid: b34b315624d1b4f4daa6daf4bbd7ba7f, type: 3}
   computerPart1: CPU/GPU
   computerPart2: Mouse
   computerPart3: Monitor

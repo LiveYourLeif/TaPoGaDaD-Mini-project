@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
-  m_Name: Fridge
+  m_Name: Cold Soda
   m_EditorClassIdentifier: 
-  description: It crushes ice! Can YOUR fridge crush ice?!
-  cardDesign: {fileID: 21300000, guid: ea96558de1ad07541ac17202d12b09d9, type: 3}
-  computerPart1: CPU/GPU
-  computerPart2: Cooler
-  computerPart3: Case
+  description: This card is a Sprite (literally!)
+  cardDesign: {fileID: 0}
+  computerPart1: Cooler
+  computerPart2: Case
+  computerPart3: Mouse
   computerPartPoint1: 3
-  computerPartPoint2: 5
-  computerPartPoint3: 1
+  computerPartPoint2: 3
+  computerPartPoint3: 3
