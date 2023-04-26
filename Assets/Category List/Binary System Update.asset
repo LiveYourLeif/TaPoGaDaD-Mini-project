@@ -10,11 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb38e74c12fb2504481b18e43d394fd7, type: 3}
-  m_Name: Form Over Function
+  m_Name: Binary System Update
   m_EditorClassIdentifier: 
-  category: Function Over Form
-  description: '+1 to Monitor, Case, Keyboard, Mouse if: 3+
-
-
-    Otherwise: -1'
-  conditionType: 1
+  category: 
+  description: 
+  conditionType: 0

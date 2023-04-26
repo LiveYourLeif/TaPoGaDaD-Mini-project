@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mette Frederiksen
   m_EditorClassIdentifier: 
   newname: Mette Frederiksen
-  description: Gamingminister og hardcore minkslayer
+  description: Denmark's Gamingminister
   bossDesign: {fileID: 0}
   targetScore: 7
   pcPart1: Power Supply
