@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         ShuffleDeck();
-        for(int i = 0; i < 4; i++)
+        for(int i = 0; i < 8; i++)
         {
             DrawCard();
         }
@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
             }
         hand.Clear();
         ShuffleDeck();
-        for(int i = 0; i < 4; i++)
+        for(int i = 0; i < 8; i++)
         {
             availableCardSlots[i] = true;
             DrawCard();
