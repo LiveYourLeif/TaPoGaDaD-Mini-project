@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
+  m_Name: Laser Pointer
+  m_EditorClassIdentifier: 
+  newname: Laser Pointer
+  description: Shiny end goes in the eyes of enemies
+  cardDesign: {fileID: 21300000, guid: cfbdb178b9eea9e4dbe497597ac30810, type: 3}
+  computerPart1: CPU/GPU
+  computerPart2: Mouse
+  computerPart3: Monitor
+  computerPartPoint1: 1
+  computerPartPoint2: 5
+  computerPartPoint3: 3

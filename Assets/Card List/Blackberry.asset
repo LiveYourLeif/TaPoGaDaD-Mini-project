@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
-  m_Name: Yosher
+  m_Name: Blackberry
   m_EditorClassIdentifier: 
-  newname: Yosher
-  description: Meow
-  cardDesign: {fileID: 21300000, guid: c184fda112c8253449c10dc0f74a0a99, type: 3}
-  computerPart1: Mouse
-  computerPart2: Keyboard
+  newname: Blackberry
+  description: Wait you... you still have this? lmao
+  cardDesign: {fileID: 21300000, guid: 16f55d5359be2d34baf24401e21fec4f, type: 3}
+  computerPart1: Keyboard
+  computerPart2: Monitor
   computerPart3: Speaker
-  computerPartPoint1: 4
+  computerPartPoint1: 5
   computerPartPoint2: 2
-  computerPartPoint3: 3
+  computerPartPoint3: 2

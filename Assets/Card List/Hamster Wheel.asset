@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
+  m_Name: Hamster Wheel
+  m_EditorClassIdentifier: 
+  newname: Hamster Wheel
+  description: Oh lord, he runnin'
+  cardDesign: {fileID: 21300000, guid: f63df8356d7c2ec4980fd3cf0eec622d, type: 3}
+  computerPart1: Power Supply
+  computerPart2: Cooler
+  computerPart3: Speaker
+  computerPartPoint1: 2
+  computerPartPoint2: 2
+  computerPartPoint3: 5

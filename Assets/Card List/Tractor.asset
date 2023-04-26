@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
-  m_Name: Calculator
+  m_Name: Tractor
   m_EditorClassIdentifier: 
-  newname: Calculator
-  description: Numbers, right?!?
-  cardDesign: {fileID: 21300000, guid: 323cbcc77fa69134f823d1bd8f4e5af8, type: 3}
+  newname: Tractor
+  description: Everybody gangsta 'til the PC with a tractor in it
+  cardDesign: {fileID: 21300000, guid: 492387ec2f048fc4d93aa0c0f85f0818, type: 3}
   computerPart1: CPU/GPU
-  computerPart2: Mouse
-  computerPart3: Monitor
-  computerPartPoint1: 1
+  computerPart2: Power Supply
+  computerPart3: Case
+  computerPartPoint1: 2
   computerPartPoint2: 5
-  computerPartPoint3: 3
+  computerPartPoint3: 2

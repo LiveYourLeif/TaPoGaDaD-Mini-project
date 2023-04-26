@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
-  m_Name: CIE 1931 Color Chart
+  m_Name: GoKart
   m_EditorClassIdentifier: 
-  newname: CIE ColorSpace
-  description: I CAN SEE FOREVER
-  cardDesign: {fileID: 21300000, guid: 6663e8d716851b2409f775d55afe4c4f, type: 3}
+  newname: GoKart
+  description: Designed for all kinds of plumbers, dinosaurs and turtles
+  cardDesign: {fileID: 21300000, guid: 5a8a4aeb5ddd3e041b6dd753ab62ed53, type: 3}
   computerPart1: CPU/GPU
   computerPart2: Power Supply
   computerPart3: Case

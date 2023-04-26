@@ -219,7 +219,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0040866584, y: -0.029271573}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -230,7 +230,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5544394, y: 0.54724914}
   m_EdgeRadius: 0
 --- !u!114 &4330891191898423141
 MonoBehaviour:
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b7b38ee615d87242a19b4c922a80387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 0}
+  card_class: {fileID: 0}
   cardName: {fileID: 0}
   cardDescriptionText: {fileID: 0}
   artworkImageOfCard: {fileID: 0}
@@ -268,6 +268,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assignedSlot: 0
   dropPos: {fileID: 0}
+  tempObject: {fileID: 0}
+  isPlaced: 0
 --- !u!1 &6734552384874828836
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,8 +440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.0085}
+  m_SizeDelta: {x: 0.997, y: 1.3326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6214850286147906521
 CanvasRenderer:
@@ -469,7 +471,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fb68e09b034c40949976514c54d16dfb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca230c10009d22847aebe2281961590a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
