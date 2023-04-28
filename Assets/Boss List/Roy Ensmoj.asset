@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91544006523e30443baaa9ab90882934, type: 3}
   m_Name: Roy Ensmoj
   m_EditorClassIdentifier: 
-  newname: Roy Ensmoj
-  description: Ultimate Gamer
-  bossDesign: {fileID: 0}
+  newname: 'ROY
+
+    ENSMOJ'
+  bossDesign: {fileID: 21300000, guid: 137b62e3d0c2a8c469f0c1e7dea1e86a, type: 3}
   targetScore: 10
   pcPart1: CPU/GPU
   pcPart2: Cooler

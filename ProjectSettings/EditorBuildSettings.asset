@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FightScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 9cd52f9d3d4529f46b927af164d56008
+  - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: 267dc093cdc0b59468499f1edcfdef32
+  - enabled: 1
+    path: Assets/Scenes/LevelTransition0.unity
+    guid: ae3f41f4d21f75c4889516586b325688
+  - enabled: 1
+    path: Assets/Scenes/FightScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 5a3adcddb4b504713932e06f18cc88ce

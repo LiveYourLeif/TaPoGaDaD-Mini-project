@@ -8,6 +8,8 @@ TagManager:
   - PlayCardSlot
   - Boss
   - Category
+  - Fade
+  - clickText
   layers:
   - Default
   - TransparentFX

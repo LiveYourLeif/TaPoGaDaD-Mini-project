@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91544006523e30443baaa9ab90882934, type: 3}
   m_Name: Mette Frederiksen
   m_EditorClassIdentifier: 
-  newname: Mette Frederiksen
-  description: Denmark's Gamingminister
-  bossDesign: {fileID: 0}
+  newname: 'MOR
+
+    METTE'
+  bossDesign: {fileID: 21300000, guid: d0091f61811ea45469988930818bfe26, type: 3}
   targetScore: 4
   pcPart1: Power Supply
   pcPart2: Cooler

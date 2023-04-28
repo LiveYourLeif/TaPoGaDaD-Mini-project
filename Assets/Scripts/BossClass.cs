@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "new boss", menuName ="Boss")]
 public class BossClass : ScriptableObject
 {
+    [TextArea(1,2)]
     public string newname;
-    public string description;
     public Sprite bossDesign;
     public int targetScore;
 

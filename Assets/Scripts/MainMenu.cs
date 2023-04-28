@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    public Animator animator;
     void Awake()
     {   
         DontDestroyOnLoad(this.gameObject);
@@ -13,15 +15,14 @@ public class MainMenu : MonoBehaviour
     //Method to start the game
     public void PlayGame()
     {
-        SceneManager.LoadScene("FightScene");
+        animator.SetTrigger("FadeOut");
+        //SceneManager.LoadScene("FightScene");
         
     }
     // Method to enter the settings
     public void EnterSettings()
     {
         SceneManager.LoadScene("Settings");
-
-        
         
     }
 
