@@ -14,9 +14,13 @@ public class RoundManager : MonoBehaviour
     public GameObject boss;
     public GameObject category;
     bool oppositeDay = false;
+    public progress p;
+    public Animator animator;
 
     void Start()
     {
+        animator = GameObject.FindWithTag("Fade").GetComponent<Animator>();
+        p = GameObject.FindGameObjectWithTag("progress").GetComponent<progress>();
         GameObject[] cardSlots;
         cardSlots = GameObject.FindGameObjectsWithTag("PlayCardSlot");
         foreach (GameObject slot in cardSlots)
@@ -88,7 +92,7 @@ public class RoundManager : MonoBehaviour
         if(checkReadySubmit() == true)
         {
             BossDisplay bd = boss.GetComponent<BossDisplay>();
-            int target = int.Parse(bd.scoreToBeat.text);
+            int target = bd.scoreToBeat;
             int score = 0;
             GameObject[] cards = rearrangedCards();
             string[] bossParts = {bd.part1.text, bd.part2.text, bd.part3.text, bd.part4.text};
@@ -143,10 +147,13 @@ public class RoundManager : MonoBehaviour
             {
                 if(score < target)
                 {
+                    animator.SetTrigger("FadeOut");
                     print("YOU LOSE!");
                 }
                 else
                 {
+                    p.currentLevel++;
+                    animator.SetTrigger("FadeOut");
                     print("YOU WIN!");
                 }
             }
@@ -154,10 +161,13 @@ public class RoundManager : MonoBehaviour
             {
                 if(score == 0)
                 {
+                    p.currentLevel++;
+                    animator.SetTrigger("FadeOut");
                     print("YOU WIN!");
                 }
                 else
                 {
+                    animator.SetTrigger("FadeOut");
                     print("YOU LOSE!");
                 }
             }

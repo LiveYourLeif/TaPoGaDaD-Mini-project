@@ -11,7 +11,7 @@ public class BossDisplay : MonoBehaviour
     public TextMeshProUGUI bossName;
     public TextMeshProUGUI bossDescriptionText;
 
-    public TextMeshProUGUI scoreToBeat;
+    public int scoreToBeat;
 
     public Image artWork;
     public TextMeshProUGUI part1;
@@ -23,6 +23,7 @@ public class BossDisplay : MonoBehaviour
     {
         bossName.text = boss.newname;
         artWork.sprite = boss.bossDesign;
+        scoreToBeat = boss.targetScore;
 
 
         part1.text = boss.pcPart1;

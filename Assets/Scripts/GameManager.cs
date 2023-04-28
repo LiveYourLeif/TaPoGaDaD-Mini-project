@@ -18,9 +18,17 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI deckSizeText;
     public TextMeshProUGUI discardPileText;
+    public BossClass[] bosses = new BossClass[4];
+    public GameObject currentBoss;
+    public int level;
 
     void Start()
     {
+        level = GameObject.FindGameObjectWithTag("progress").GetComponent<progress>().currentLevel;
+        currentBoss = GameObject.FindGameObjectWithTag("Boss");
+
+        currentBoss.GetComponent<BossDisplay>().boss = bosses[level];
+        
         ShuffleDeck();
         for(int i = 0; i < 8; i++)
         {

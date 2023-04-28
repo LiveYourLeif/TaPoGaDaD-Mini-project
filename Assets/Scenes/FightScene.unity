@@ -1123,6 +1123,12 @@ MonoBehaviour:
   availableCardSlots: 0101010101010101
   deckSizeText: {fileID: 940377974}
   discardPileText: {fileID: 1018337572}
+  bosses:
+  - {fileID: 11400000, guid: 00b0f76d5873c1246904115eb4397395, type: 2}
+  - {fileID: 11400000, guid: 44dbf5050da2f0943ae3c9fa9d9eefad, type: 2}
+  - {fileID: 11400000, guid: 695a56a063a2580428f765e7c841c0f2, type: 2}
+  - {fileID: 11400000, guid: 36cd22481aa21cb42abb6f91960a2d78, type: 2}
+  level: 0
 --- !u!4 &463155074
 Transform:
   m_ObjectHideFlags: 0
@@ -1655,7 +1661,7 @@ MonoBehaviour:
   boss: {fileID: 11400000, guid: 36cd22481aa21cb42abb6f91960a2d78, type: 2}
   bossName: {fileID: 1882874706}
   bossDescriptionText: {fileID: 0}
-  scoreToBeat: {fileID: 0}
+  scoreToBeat: 0
   artWork: {fileID: 1423959916}
   part1: {fileID: 2060037546}
   part2: {fileID: 513279710}
@@ -3667,6 +3673,8 @@ MonoBehaviour:
   bossParts: []
   boss: {fileID: 643325354}
   category: {fileID: 0}
+  p: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!4 &1482941168
 Transform:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class transitionManager : MonoBehaviour
     {
         audioSource = this.GetComponent<AudioSource>();
         animator = GameObject.FindWithTag("Fade").GetComponent<Animator>();
+        
     }
 
     public void AnimDone()

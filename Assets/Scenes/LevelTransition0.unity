@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 1062325958}
   m_Layer: 5
   m_Name: Canvas - Background / Manager
-  m_TagString: Untagged
+  m_TagString: canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f8edd5df58969479d0a5087d6150dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1062325956}
   buttonAnimator: {fileID: 1718179634}
 --- !u!82 &1062325958
 AudioSource:
