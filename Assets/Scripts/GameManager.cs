@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
                 hand[cardSlotIndex].transform.position += new Vector3(0, 20f, 0) * Time.deltaTime;
                 if (hand[cardSlotIndex].transform.position.y >= -3.5)
                 {
-                    if (cardSlotIndex < 7)
+                    if (cardSlotIndex < cardslots.Length - 1)
                     {
                         cardSlotIndex++;
                     }
@@ -183,7 +183,7 @@ public class GameManager : MonoBehaviour
     bool smallDelay()
     {
         delay += Time.deltaTime;
-        if(delay >= 0.5)
+        if(delay >= 2.5)
         {
             return true;
         }
