@@ -16,15 +16,20 @@ public class GameManager : MonoBehaviour
     public Transform[] cardslots;
     public bool[] availableCardSlots;
 
+    public bool[] buttonsAvailable = new bool[3];
+
     public TextMeshProUGUI deckSizeText;
     public TextMeshProUGUI discardPileText;
     public BossClass[] bosses = new BossClass[4];
     public GameObject currentBoss;
+    public progress prog;
     public int level;
 
     void Start()
     {
-        level = GameObject.FindGameObjectWithTag("progress").GetComponent<progress>().currentLevel;
+        prog = GameObject.FindGameObjectWithTag("progress").GetComponent<progress>();
+        level = prog.currentLevel;
+        buttonsAvailable = prog.buttonStates;
         currentBoss = GameObject.FindGameObjectWithTag("Boss");
 
         currentBoss.GetComponent<BossDisplay>().boss = bosses[level];
@@ -91,50 +96,61 @@ public class GameManager : MonoBehaviour
 
     public void p_rerollHand()
     {
-        foreach(Card card in hand)
+        if(buttonsAvailable[0])
+        {
+            foreach (Card card in hand)
             {
                 deck.Add(card);
-                card.transform.position = new Vector3(-21.3400002f,-7.67999983f,0);
+                card.transform.position = new Vector3(-21.3400002f, -7.67999983f, 0);
             }
-        hand.Clear();
-        ShuffleDeck();
-        for(int i = 0; i < 8; i++)
-        {
-            availableCardSlots[i] = true;
-            DrawCard();
+            hand.Clear();
+            ShuffleDeck();
+            for (int i = 0; i < 8; i++)
+            {
+                availableCardSlots[i] = true;
+                DrawCard();
+            }
+            prog.buttonStates[0] = false;
         }
-
     }
     public void p_rerollChallenge()
     {
-        CategoryDisplay c = GameObject.FindWithTag("Category").GetComponent<CategoryDisplay>();
-        CategoryClass new_c = categories[Random.Range(0, categories.Count)];
-        while(c.category_class == new_c)
+        if(buttonsAvailable[1])
         {
-            new_c = categories[Random.Range(0, categories.Count)];
-            print(new_c);
-        }
+            CategoryDisplay c = GameObject.FindWithTag("Category").GetComponent<CategoryDisplay>();
+            CategoryClass new_c = categories[Random.Range(0, categories.Count)];
+            while (c.category_class == new_c)
+            {
+                new_c = categories[Random.Range(0, categories.Count)];
+                print(new_c);
+            }
 
-        c.category_class = new_c;
-        c.updateCategory();
+            c.category_class = new_c;
+            c.updateCategory();
+            prog.buttonStates[1] = false;
+        }
     }
     public void p_rerollParts()
     {
-        BossDisplay b = GameObject.FindWithTag("Boss").GetComponent<BossDisplay>();
-        int index = Random.Range(0, parts.Count);
-        b.part1.text = parts[index];
-        parts.RemoveAt(index);
-        index = Random.Range(0, parts.Count);
-        b.part2.text = parts[index];
-        parts.RemoveAt(index);
-        index = Random.Range(0, parts.Count);
-        b.part3.text = parts[index];
-        parts.RemoveAt(index);
-        index = Random.Range(0, parts.Count);
-        b.part4.text = parts[index];
-        parts.RemoveAt(index);
+        if (buttonsAvailable[2])
+        {
+            BossDisplay b = GameObject.FindWithTag("Boss").GetComponent<BossDisplay>();
+            int index = Random.Range(0, parts.Count);
+            b.part1.text = parts[index];
+            parts.RemoveAt(index);
+            index = Random.Range(0, parts.Count);
+            b.part2.text = parts[index];
+            parts.RemoveAt(index);
+            index = Random.Range(0, parts.Count);
+            b.part3.text = parts[index];
+            parts.RemoveAt(index);
+            index = Random.Range(0, parts.Count);
+            b.part4.text = parts[index];
+            parts.RemoveAt(index);
 
-        parts = new List<string> {"CPU/GPU", "Case", "Power Supply", "Cooler", "Mouse", "Monitor", "Speaker", "Keyboard"};
+            parts = new List<string> { "CPU/GPU", "Case", "Power Supply", "Cooler", "Mouse", "Monitor", "Speaker", "Keyboard" };
+            prog.buttonStates[2] = false;
+        }
     }
 
 }

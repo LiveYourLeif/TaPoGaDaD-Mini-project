@@ -13,7 +13,7 @@ public class DragAndDrop : MonoBehaviour
 
     void Start()
     {
-    
+        dropPos = this.gameObject.transform;
     }
     
     void OnMouseDown()
@@ -24,7 +24,7 @@ public class DragAndDrop : MonoBehaviour
 
     void OnMouseDrag()
     {
-        transform.position = GetMousePos() + _dragOffset;
+        transform.position = GetMousePos();
     } 
 
     void OnMouseUp()
