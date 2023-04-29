@@ -20,6 +20,23 @@ public class DragAndDrop : MonoBehaviour
     {
         _dragOffset = transform.position - GetMousePos();
         isPlaced = false;
+
+        Canvas canvasRenderer = GetComponentInChildren<Canvas>();
+
+        int highestSortingOrder = 0;
+        foreach (GameObject card in GameObject.FindGameObjectsWithTag("Card"))
+        {
+            Canvas otherCanvasRenderer = card.GetComponentInChildren<Canvas>();
+            if (otherCanvasRenderer.sortingLayerID == canvasRenderer.sortingLayerID && otherCanvasRenderer.sortingOrder > highestSortingOrder)
+            {
+                highestSortingOrder = otherCanvasRenderer.sortingOrder;
+            }
+        }
+
+        canvasRenderer.sortingLayerID = SortingLayer.NameToID("Default");
+        canvasRenderer.sortingOrder = highestSortingOrder + 1;
+
+        transform.SetAsLastSibling();
     }
 
     void OnMouseDrag()
@@ -36,7 +53,7 @@ public class DragAndDrop : MonoBehaviour
     Vector3 GetMousePos()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0;
+        mousePos.z = -1;
         return mousePos;
     }
 

@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
     public GameObject currentBoss;
     public progress prog;
     public int level;
+    bool moveCardSlots = true;
+    int cardSlotIndex = 0;
+    float delay = 0;
 
     void Start()
     {
@@ -38,6 +41,28 @@ public class GameManager : MonoBehaviour
         for(int i = 0; i < 8; i++)
         {
             DrawCard();
+        }
+    }
+
+    void Update()
+    {
+        if(smallDelay() == true)
+        {
+            if (moveCardSlots == true)
+            {
+                hand[cardSlotIndex].transform.position += new Vector3(0, 20f, 0) * Time.deltaTime;
+                if (hand[cardSlotIndex].transform.position.y >= -3.5)
+                {
+                    if (cardSlotIndex < 7)
+                    {
+                        cardSlotIndex++;
+                    }
+                    else
+                    {
+                        moveCardSlots = false;
+                    }
+                }
+            }
         }
     }
 
@@ -110,6 +135,8 @@ public class GameManager : MonoBehaviour
                 availableCardSlots[i] = true;
                 DrawCard();
             }
+            cardSlotIndex = 0;
+            moveCardSlots = true;
             prog.buttonStates[0] = false;
         }
     }
@@ -150,6 +177,19 @@ public class GameManager : MonoBehaviour
 
             parts = new List<string> { "CPU/GPU", "Case", "Power Supply", "Cooler", "Mouse", "Monitor", "Speaker", "Keyboard" };
             prog.buttonStates[2] = false;
+        }
+    }
+
+    bool smallDelay()
+    {
+        delay += Time.deltaTime;
+        if(delay >= 0.5)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
