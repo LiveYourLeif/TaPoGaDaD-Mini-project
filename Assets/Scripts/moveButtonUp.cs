@@ -12,11 +12,11 @@ public class moveButtonUp : MonoBehaviour
     public void animDoneWin()
     {
         buttonText.text = "Next Level!";
-        buttonAnim.SetTrigger("MoveButtonUp");
+        buttonAnim.SetTrigger("MoveButtonFight");
     }
     public void animDoneLose()
     {
         buttonText.text = "Try Again?";
-        buttonAnim.SetTrigger("MoveButtonUp");
+        buttonAnim.SetTrigger("MoveButtonFight");
     }
 }
