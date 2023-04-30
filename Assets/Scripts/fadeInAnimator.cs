@@ -22,14 +22,26 @@ public class fadeInAnimator : MonoBehaviour
 
         public void OnFadeComplete()
     {
-        if(SceneManager.GetActiveScene().buildIndex < 3)
-            {
-                SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
-            }
+        if(SceneManager.GetActiveScene().name == "Victory")
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+        else
+        {
+            if (SceneManager.GetActiveScene().buildIndex < 3)
+                if (p.currentLevel == 4)
+                {
+                    SceneManager.LoadScene("Victory");
+                }
+                else
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
             else
             {
-                SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex - 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             }
+        }
         animator.SetTrigger("FadeIn");
     }
 }

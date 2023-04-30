@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Urban Gaming
   m_EditorClassIdentifier: 
   category: Urban Gaming
-  description: '+1 to Speaker, CPU/GPU, Keyboard, Cooler if: 3+
+  description: 'Bonus points to Speaker, CPU/GPU, Keyboard, Cooler IF they fit well!
 
 
     Otherwise:
-    -1'
+    Lose points!'
   conditionType: 5

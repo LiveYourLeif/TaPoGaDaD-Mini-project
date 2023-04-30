@@ -29,6 +29,8 @@ AnimationClip:
       value: {fileID: 21300000, guid: ec404d6ad1698104a870871af548ec50, type: 3}
     - time: 4
       value: {fileID: 21300000, guid: 942845251ff8f584e8f67f3a8b42629f, type: 3}
+    - time: 5
+      value: {fileID: 21300000, guid: 17953d8232a72034fa9acbac644b6a1c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -53,12 +55,13 @@ AnimationClip:
     - {fileID: 21300000, guid: 1c8ad3b39c5df7440a68a301cfae2ad4, type: 3}
     - {fileID: 21300000, guid: ec404d6ad1698104a870871af548ec50, type: 3}
     - {fileID: 21300000, guid: 942845251ff8f584e8f67f3a8b42629f, type: 3}
+    - {fileID: 21300000, guid: 17953d8232a72034fa9acbac644b6a1c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 4.016667
+    m_StopTime: 5.016667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -106,7 +109,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 4
+  - time: 4.8333335
+    functionName: playFootstep
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 5
     functionName: AnimDone
     data: 
     objectReferenceParameter: {fileID: 0}

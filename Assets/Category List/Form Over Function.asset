@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Form Over Function
   m_EditorClassIdentifier: 
   category: Function Over Form
-  description: '+1 to Monitor, Case, Keyboard, Mouse if: 3+
+  description: 'Bonus points to Monitor, Case, Keyboard, Mouse IF they fit well!
 
 
-    Otherwise: -1'
+    Otherwise:
+    Lose points!'
   conditionType: 1

@@ -10,12 +10,14 @@ public class DragAndDrop : MonoBehaviour
     [SerializeField] private Transform dropPos;
     public GameObject tempObject;
     public bool isPlaced = false;
+    GameManager gm;
 
     void Start()
     {
         dropPos = this.gameObject.transform;
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
-    
+
     void OnMouseDown()
     {
         _dragOffset = transform.position - GetMousePos();
@@ -41,12 +43,20 @@ public class DragAndDrop : MonoBehaviour
 
     void OnMouseDrag()
     {
-        transform.position = GetMousePos();
+        isPlaced = false;
+        if (gm.help == false)
+        {
+            if(GetMousePos().x > -5.5 && GetMousePos().x < 5.5)
+            {
+                transform.position = GetMousePos();
+            }
+        }
     } 
 
     void OnMouseUp()
     {
         this.gameObject.transform.position = dropPos.position;
+        this.gameObject.transform.position -= new Vector3(0, 0, 0.1f);
         isPlaced = true;
     }
 

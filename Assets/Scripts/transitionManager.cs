@@ -29,4 +29,6 @@ public class transitionManager : MonoBehaviour
     {
         animator.SetTrigger("FadeOut");
     }
+
+
 }

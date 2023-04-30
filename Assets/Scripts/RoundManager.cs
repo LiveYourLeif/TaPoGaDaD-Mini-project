@@ -16,6 +16,9 @@ public class RoundManager : MonoBehaviour
     bool oppositeDay = false;
     public progress p;
     public Animator animator;
+    public Animator bossEndAnim;
+    public Animator darken;
+    public Canvas endCanvas;
 
     void Start()
     {
@@ -52,7 +55,7 @@ public class RoundManager : MonoBehaviour
         }
     }
 
-    bool checkReadySubmit()
+    public bool checkReadySubmit()
     {
         GameObject[] cardSlots;
         cardSlots = GameObject.FindGameObjectsWithTag("PlayCardSlot");
@@ -91,6 +94,7 @@ public class RoundManager : MonoBehaviour
     {
         if(checkReadySubmit() == true)
         {
+            endCanvas.sortingOrder = 999;
             BossDisplay bd = boss.GetComponent<BossDisplay>();
             int target = bd.scoreToBeat;
             int score = 0;
@@ -147,13 +151,17 @@ public class RoundManager : MonoBehaviour
             {
                 if(score < target)
                 {
-                    animator.SetTrigger("FadeOut");
+                    //animator.SetTrigger("FadeOut");
+                    darken.SetTrigger("EndScreen");
+                    bossEndAnim.SetTrigger("Loss");
                     print("YOU LOSE!");
                 }
                 else
                 {
                     p.currentLevel++;
-                    animator.SetTrigger("FadeOut");
+                    //animator.SetTrigger("FadeOut");
+                    darken.SetTrigger("EndScreen");
+                    bossEndAnim.SetTrigger("Win");
                     print("YOU WIN!");
                 }
             }
@@ -162,12 +170,16 @@ public class RoundManager : MonoBehaviour
                 if(score == 0)
                 {
                     p.currentLevel++;
-                    animator.SetTrigger("FadeOut");
+                    //animator.SetTrigger("FadeOut");
+                    darken.SetTrigger("EndScreen");
+                    bossEndAnim.SetTrigger("Win");
                     print("YOU WIN!");
                 }
                 else
                 {
-                    animator.SetTrigger("FadeOut");
+                    //animator.SetTrigger("FadeOut");
+                    darken.SetTrigger("EndScreen");
+                    bossEndAnim.SetTrigger("Loss");
                     print("YOU LOSE!");
                 }
             }
@@ -177,6 +189,11 @@ public class RoundManager : MonoBehaviour
         {
             print("Not all cards have been assigned!");
         }
+    }
+
+    public void fadeOutLevel()
+    {
+        animator.SetTrigger("FadeOut");
     }
 
     int categoryModifier(string part, int partPoints)

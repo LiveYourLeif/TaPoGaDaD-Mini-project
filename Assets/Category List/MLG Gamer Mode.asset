@@ -13,13 +13,9 @@ MonoBehaviour:
   m_Name: MLG Gamer Mode
   m_EditorClassIdentifier: 
   category: MLG Gamer Mode
-  description: "+1 to Keyboard, CPU/GPU, Speaker, Mouse if: 3+ \n\nOtherwise: -1"
-  conditionMet: 1
-  m_CPU: 1
-  m_Power: 0
-  m_Cooler: 0
-  m_Case: 0
-  m_Mouse: 1
-  m_Keyboard: 1
-  m_Monitor: 0
-  m_Speaker: 1
+  description: 'Bonus points to Keyboard, CPU/GPU, Speaker, Mouse IF they fit well!
+
+
+    Otherwise:
+    Lose points!'
+  conditionType: 0

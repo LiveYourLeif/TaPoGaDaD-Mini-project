@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb38e74c12fb2504481b18e43d394fd7, type: 3}
   m_Name: Desert Island Gaming
   m_EditorClassIdentifier: 
-  category: 
-  description: '+1 to Cooler, Case, Monitor, Mouse if: 3+
+  category: Desert Island Gaming
+  description: 'Bonus points to Cooler, Case, Monitor, Mouse IF they fit well!
 
 
-    Otherwise: -1'
+    Otherwise:
+    Lose points!'
   conditionType: 4

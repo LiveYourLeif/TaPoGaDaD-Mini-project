@@ -22,11 +22,17 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI discardPileText;
     public BossClass[] bosses = new BossClass[4];
     public GameObject currentBoss;
+    public RoundManager roundmng;
     public progress prog;
     public int level;
     bool moveCardSlots = true;
     int cardSlotIndex = 0;
     float delay = 0;
+    public GameObject helpCanvas;
+    public GameObject[] helpChildren;
+    public bool help = false;
+    public bool answerSubmitted = false;
+    int helpIndex = 0;
 
     void Start()
     {
@@ -36,7 +42,13 @@ public class GameManager : MonoBehaviour
         currentBoss = GameObject.FindGameObjectWithTag("Boss");
 
         currentBoss.GetComponent<BossDisplay>().boss = bosses[level];
-        
+
+        CategoryDisplay c = GameObject.FindWithTag("Category").GetComponent<CategoryDisplay>();
+        CategoryClass new_c = categories[Random.Range(0, categories.Count)];
+        new_c = categories[Random.Range(0, categories.Count)];
+        c.category_class = new_c;
+        c.updateCategory();
+
         ShuffleDeck();
         for(int i = 0; i < 8; i++)
         {
@@ -51,10 +63,11 @@ public class GameManager : MonoBehaviour
             if (moveCardSlots == true)
             {
                 hand[cardSlotIndex].transform.position += new Vector3(0, 20f, 0) * Time.deltaTime;
-                if (hand[cardSlotIndex].transform.position.y >= -3.5)
+                if (hand[cardSlotIndex].transform.position.y >= -3.3)
                 {
                     if (cardSlotIndex < cardslots.Length - 1)
                     {
+                        hand[cardSlotIndex].transform.position = new Vector3(hand[cardSlotIndex].transform.position.x, -3.3f, hand[cardSlotIndex].transform.position.z);
                         cardSlotIndex++;
                     }
                     else
@@ -130,7 +143,7 @@ public class GameManager : MonoBehaviour
             }
             hand.Clear();
             ShuffleDeck();
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < cardslots.Length; i++)
             {
                 availableCardSlots[i] = true;
                 DrawCard();
@@ -193,4 +206,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void helpActive()
+    {
+        help = true;
+        helpCanvas.SetActive(true);
+        helpChildren[0].SetActive(true);
+    }
+
+    public void updateHelp()
+    {
+        helpChildren[helpIndex].SetActive(false);
+        helpIndex++;
+        if(helpIndex > 4)
+        {
+            help = false;
+            helpCanvas.SetActive(false);
+            helpIndex = 0;
+        }
+        else
+        {
+            helpChildren[helpIndex].SetActive(true);
+        }
+    }
 }

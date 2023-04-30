@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Opposite Day
   m_EditorClassIdentifier: 
   category: Opposite
-  description: You win if NONE of your parts score any points!
+  description: You win only if NONE of your parts score any points!
   conditionType: 6

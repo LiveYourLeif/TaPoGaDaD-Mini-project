@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Function Over Form
   m_EditorClassIdentifier: 
   category: Function Over Form
-  description: '+1 to CPU/GPU, Power Supply, Cooler, Speaker if 3+
+  description: 'Bonus points to CPU/GPU, Power Supply, Cooler, Speaker IF they fit
+    well!
 
 
-    Otherwise:
-    -1'
+    Otherwise: Lose points!'
   conditionType: 2
