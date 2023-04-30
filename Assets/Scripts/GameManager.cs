@@ -196,7 +196,7 @@ public class GameManager : MonoBehaviour
     bool smallDelay()
     {
         delay += Time.deltaTime;
-        if(delay >= 2.5)
+        if(delay >= 2.75f)
         {
             return true;
         }

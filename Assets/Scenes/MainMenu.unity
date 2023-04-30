@@ -123,6 +123,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &43606389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7863859022842894278, guid: 20286d4b0e2d71a4cb869f57ee9058d7, type: 3}
+  m_PrefabInstance: {fileID: 7863859021623436855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &43606392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43606389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d663d8a33c829c45b294e06bb11fe98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &175283383
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,7 +957,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &810427166
+--- !u!114 &810427169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -949,7 +966,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 810427151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f9d7885a172d3646a94b211aab9db56, type: 3}
+  m_Script: {fileID: 11500000, guid: 51f8d58122124504aab5f9c047fc3697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1072782736
@@ -2243,5 +2260,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fade Transition
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7863859022842894274, guid: 20286d4b0e2d71a4cb869f57ee9058d7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 20286d4b0e2d71a4cb869f57ee9058d7, type: 3}
