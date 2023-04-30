@@ -7,10 +7,6 @@ public class MainMenu : MonoBehaviour
 {
 
     public Animator animator;
-    void Awake()
-    {   
-        DontDestroyOnLoad(this.gameObject);
-    }
 
     //Method to start the game
     public void PlayGame()

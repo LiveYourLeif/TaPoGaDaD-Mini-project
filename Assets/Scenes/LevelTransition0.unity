@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 1062325956}
   - component: {fileID: 1062325957}
   - component: {fileID: 1062325958}
+  - component: {fileID: 1062325959}
   m_Layer: 5
   m_Name: Canvas - Background / Manager
   m_TagString: canvas
@@ -397,6 +398,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1062325959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062325949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef72952ea600be4abfbe4917ee3ca8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mm: {fileID: 0}
 --- !u!1 &1106976522
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +576,7 @@ GameObject:
   - component: {fileID: 1718179632}
   - component: {fileID: 1718179631}
   - component: {fileID: 1718179634}
+  - component: {fileID: 1718179635}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -645,6 +660,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1718179635}
+        m_TargetAssemblyTypeName: findMusic, Assembly-CSharp
+        m_MethodName: buttonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1718179632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,6 +731,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1718179635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718179629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef72952ea600be4abfbe4917ee3ca8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mm: {fileID: 0}
 --- !u!1 &1878897434
 GameObject:
   m_ObjectHideFlags: 0

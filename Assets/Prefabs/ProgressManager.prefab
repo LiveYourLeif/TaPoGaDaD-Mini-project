@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 553840432940655478}
   - component: {fileID: 553840432940655479}
-  - component: {fileID: 553840432940655472}
   m_Layer: 0
   m_Name: ProgressManager
   m_TagString: progress
@@ -47,15 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLevel: 0
   anim: {fileID: 0}
---- !u!114 &553840432940655472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553840432940655473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f9d7885a172d3646a94b211aab9db56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  buttonStates: 010101
+  forcedQuit: 0

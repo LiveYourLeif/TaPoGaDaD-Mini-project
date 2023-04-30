@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Harold
   m_EditorClassIdentifier: 
   newname: HAROLD
-  bossDesign: {fileID: 21300000, guid: e965b91d768009948838e5a7acd63e94, type: 3}
+  bossDesign: {fileID: 21300000, guid: 02051f64bd632a54abf2398bd37819eb, type: 3}
   targetScore: 8
   pcPart1: Power Supply
   pcPart2: Case
