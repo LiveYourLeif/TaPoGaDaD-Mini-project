@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] helpChildren;
     public bool help = false;
     public bool answerSubmitted = false;
+    bool cardDown = false;
     int helpIndex = 0;
 
     void Start()
@@ -58,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(smallDelay() == true)
+        if (smallDelay() == true)
         {
             if (moveCardSlots == true)
             {
@@ -74,6 +75,18 @@ public class GameManager : MonoBehaviour
                     {
                         moveCardSlots = false;
                     }
+                }
+            }
+        }
+
+        if (cardDown == true)
+        {
+            foreach (Card card in hand)
+            {
+                if (card.GetComponent<DragAndDrop>().isPlaced == false && card.transform.position.y > -75)
+                {
+                    card.transform.position -= new Vector3(0, 20f, 0) * Time.deltaTime;
+
                 }
             }
         }
@@ -227,5 +240,10 @@ public class GameManager : MonoBehaviour
         {
             helpChildren[helpIndex].SetActive(true);
         }
+    }
+
+    public void moveDown()
+    {
+        cardDown = true;
     }
 }

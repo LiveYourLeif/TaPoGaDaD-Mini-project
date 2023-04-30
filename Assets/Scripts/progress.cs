@@ -8,19 +8,26 @@ public class progress : MonoBehaviour
     public Animator anim;
     public bool[] buttonStates = { true, true, true };
     public bool forcedQuit = false;
+    public float timer = 0;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            SceneManager.LoadScene("MainMenu");
+        }
+
+        if(SceneManager.GetActiveScene().name == "MainMenu")
+        {
             buttonStates[0] = true;
             buttonStates[1] = true;
             buttonStates[2] = true;
-            SceneManager.LoadScene("MainMenu");
+            currentLevel = 0;
         }
+        timer += Time.deltaTime;
     }
 
-public void levelIncrease()
+    public void levelIncrease()
     {
         currentLevel++;
         print("level: " + currentLevel);

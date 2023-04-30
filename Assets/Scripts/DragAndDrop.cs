@@ -10,6 +10,7 @@ public class DragAndDrop : MonoBehaviour
     [SerializeField] private Transform dropPos;
     public GameObject tempObject;
     public bool isPlaced = false;
+    public bool dontMove = false;
     GameManager gm;
 
     void Start()
@@ -20,31 +21,34 @@ public class DragAndDrop : MonoBehaviour
 
     void OnMouseDown()
     {
-        _dragOffset = transform.position - GetMousePos();
-        isPlaced = false;
-
-        Canvas canvasRenderer = GetComponentInChildren<Canvas>();
-
-        int highestSortingOrder = 0;
-        foreach (GameObject card in GameObject.FindGameObjectsWithTag("Card"))
+        if(dontMove == false)
         {
-            Canvas otherCanvasRenderer = card.GetComponentInChildren<Canvas>();
-            if (otherCanvasRenderer.sortingLayerID == canvasRenderer.sortingLayerID && otherCanvasRenderer.sortingOrder > highestSortingOrder)
+            _dragOffset = transform.position - GetMousePos();
+            isPlaced = false;
+
+            Canvas canvasRenderer = GetComponentInChildren<Canvas>();
+
+            int highestSortingOrder = 0;
+            foreach (GameObject card in GameObject.FindGameObjectsWithTag("Card"))
             {
-                highestSortingOrder = otherCanvasRenderer.sortingOrder;
+                Canvas otherCanvasRenderer = card.GetComponentInChildren<Canvas>();
+                if (otherCanvasRenderer.sortingLayerID == canvasRenderer.sortingLayerID && otherCanvasRenderer.sortingOrder > highestSortingOrder)
+                {
+                    highestSortingOrder = otherCanvasRenderer.sortingOrder;
+                }
             }
+
+            canvasRenderer.sortingLayerID = SortingLayer.NameToID("Default");
+            canvasRenderer.sortingOrder = highestSortingOrder + 1;
+
+            transform.SetAsLastSibling();
         }
-
-        canvasRenderer.sortingLayerID = SortingLayer.NameToID("Default");
-        canvasRenderer.sortingOrder = highestSortingOrder + 1;
-
-        transform.SetAsLastSibling();
     }
 
     void OnMouseDrag()
     {
         isPlaced = false;
-        if (gm.help == false)
+        if (gm.help == false && dontMove == false)
         {
             if(GetMousePos().x > -5.5 && GetMousePos().x < 5.5)
             {
@@ -55,9 +59,12 @@ public class DragAndDrop : MonoBehaviour
 
     void OnMouseUp()
     {
-        this.gameObject.transform.position = dropPos.position;
-        this.gameObject.transform.position -= new Vector3(0, 0, 0.1f);
-        isPlaced = true;
+        if (dontMove == false)
+        {
+            this.gameObject.transform.position = dropPos.position;
+            this.gameObject.transform.position -= new Vector3(0, 0, 0.1f);
+            isPlaced = true;
+        }
     }
 
     Vector3 GetMousePos()

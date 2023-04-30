@@ -13,6 +13,7 @@ TagManager:
   - progress
   - canvas
   - help
+  - scene
   layers:
   - Default
   - TransparentFX

@@ -24,6 +24,7 @@ public class fadeInAnimator : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name == "Victory")
         {
+            p.currentLevel = 0;
             SceneManager.LoadScene("MainMenu");
         }
         else
