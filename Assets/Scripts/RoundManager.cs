@@ -41,17 +41,13 @@ public class RoundManager : MonoBehaviour
 
     void Update()
     {
-        if(checkReadySubmit() == true)
+        if (checkReadySubmit() == false)
         {
-            var colors = submitButton.GetComponent<Button>().colors;
-            colors.normalColor = Color.red;
-            submitButton.GetComponent<Button>().colors = colors;
+            submitButton.enabled = false;
         }
         else
         {
-            var colors = submitButton.GetComponent<Button>().colors;
-            colors.normalColor = Color.white;
-            submitButton.GetComponent<Button>().colors = colors;
+            submitButton.enabled = true;
         }
     }
 
