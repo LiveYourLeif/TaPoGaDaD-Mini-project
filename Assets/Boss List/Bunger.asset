@@ -16,7 +16,7 @@ MonoBehaviour:
 
     PLUSH'
   bossDesign: {fileID: 21300000, guid: 6a379308134542547b7ce4f855f61b7b, type: 3}
-  targetScore: 7
+  targetScore: 8
   pcPart1: CPU/GPU
   pcPart2: Case
   pcPart3: Mouse

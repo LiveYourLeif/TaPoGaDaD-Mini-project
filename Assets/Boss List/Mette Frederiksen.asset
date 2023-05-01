@@ -16,7 +16,7 @@ MonoBehaviour:
 
     METTE'
   bossDesign: {fileID: 21300000, guid: d0091f61811ea45469988930818bfe26, type: 3}
-  targetScore: 4
+  targetScore: 5
   pcPart1: Power Supply
   pcPart2: Cooler
   pcPart3: Keyboard

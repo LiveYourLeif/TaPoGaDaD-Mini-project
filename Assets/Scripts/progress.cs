@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class progress : MonoBehaviour
 {
     public int currentLevel = 0;
+    public List<Card> usedCards = new List<Card>(); 
     public Animator anim;
     public bool[] buttonStates = { true, true, true };
     public bool forcedQuit = false;
@@ -28,6 +29,7 @@ public class progress : MonoBehaviour
             buttonStates[1] = true;
             buttonStates[2] = true;
             currentLevel = 0;
+            usedCards.Clear();
         }
         timer += Time.deltaTime;
     }
