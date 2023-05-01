@@ -13,10 +13,6 @@ public class progress : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
