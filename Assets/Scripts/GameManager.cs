@@ -34,9 +34,12 @@ public class GameManager : MonoBehaviour
     public bool answerSubmitted = false;
     bool cardDown = false;
     int helpIndex = 0;
+    private AudioSource aud;
+    bool once = true;
 
     void Start()
     {
+        aud = this.GetComponent<AudioSource>();
         prog = GameObject.FindGameObjectWithTag("progress").GetComponent<progress>();
         level = prog.currentLevel;
         buttonsAvailable = prog.buttonStates;
@@ -70,11 +73,17 @@ public class GameManager : MonoBehaviour
                     {
                         hand[cardSlotIndex].transform.position = new Vector3(hand[cardSlotIndex].transform.position.x, -3.3f, hand[cardSlotIndex].transform.position.z);
                         cardSlotIndex++;
+                        once = true;
                     }
                     else
                     {
                         moveCardSlots = false;
                     }
+                }
+                else if(hand[cardSlotIndex].transform.position.y >= -6.5f && once == true)
+                {
+                    aud.Play();
+                    once = false;
                 }
             }
         }

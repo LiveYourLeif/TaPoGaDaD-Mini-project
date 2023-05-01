@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Cold Soda
   m_EditorClassIdentifier: 
-  cardDesign: {fileID: 21300000, guid: e141766153dafc943b46d01e83e882d2, type: 3}
+  cardDesign: {fileID: 21300000, guid: 9f84f017d8916a14391343ea4e90f116, type: 3}
   computerPart1: Cooler
   computerPart2: Case
   computerPart3: Mouse

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Old Car Battery
   m_EditorClassIdentifier: 
-  cardDesign: {fileID: 21300000, guid: 1fba070665319044aa0312f3386b30b1, type: 3}
+  cardDesign: {fileID: 21300000, guid: 0fe6eaaae732ddd40b61190d18f8b15b, type: 3}
   computerPart1: CPU/GPU
   computerPart2: Power Supply
   computerPart3: Case

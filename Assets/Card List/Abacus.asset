@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Abacus
   m_EditorClassIdentifier: 
-  cardDesign: {fileID: 21300000, guid: 83ae466c2289d0a4f989195cc59dbd0e, type: 3}
+  cardDesign: {fileID: 21300000, guid: e4d282c3f0d6262438f908c60c185075, type: 3}
   computerPart1: CPU/GPU
   computerPart2: Keyboard
   computerPart3: Monitor

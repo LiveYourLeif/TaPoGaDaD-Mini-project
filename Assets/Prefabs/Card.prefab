@@ -213,6 +213,8 @@ MonoBehaviour:
   dropPos: {fileID: 0}
   tempObject: {fileID: 0}
   isPlaced: 0
+  hittingCard: 0
+  dontMove: 0
 --- !u!1 &7811677522198812521
 GameObject:
   m_ObjectHideFlags: 0

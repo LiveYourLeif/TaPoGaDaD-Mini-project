@@ -17,6 +17,11 @@ public class progress : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
         }
 
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Screen.fullScreen = !Screen.fullScreen;
+        }
+
         if(SceneManager.GetActiveScene().name == "MainMenu")
         {
             buttonStates[0] = true;

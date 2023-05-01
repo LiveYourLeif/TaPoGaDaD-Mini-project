@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28bcfd2fc1f6d4b86f1cdf5d978f98, type: 3}
   m_Name: Cold Fusion Cell
   m_EditorClassIdentifier: 
-  cardDesign: {fileID: 21300000, guid: 374a4adea00080047a70993773be189e, type: 3}
+  cardDesign: {fileID: 21300000, guid: 52a872191fb9ce244a72873a2fc63403, type: 3}
   computerPart1: Power Supply
   computerPart2: Cooler
   computerPart3: Mouse
