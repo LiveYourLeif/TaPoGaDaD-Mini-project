@@ -1370,6 +1370,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 90b66acb72e41bc4e9a7c1be51a3eaf9, type: 2}
   - {fileID: 11400000, guid: 2c5cfded9c09c6d4bac6bc560dbb888d, type: 2}
   - {fileID: 11400000, guid: 561c82c4dd130d34fa20c1aaa9c96672, type: 2}
+  - {fileID: 11400000, guid: 37f243c2197b3b643827129b11242663, type: 2}
   parts:
   - CPU/GPU
   - Case
@@ -1630,7 +1631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -550, y: 481.8}
+  m_AnchoredPosition: {x: -550, y: 548}
   m_SizeDelta: {x: 274.8, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &471058629
@@ -2583,7 +2584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.390015, y: -100}
+  m_AnchoredPosition: {x: 14.390015, y: -47}
   m_SizeDelta: {x: 563.12, y: 153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &744125598 stripped
@@ -3166,7 +3167,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -513.9, y: 252.9}
+  m_AnchoredPosition: {x: -513.9, y: 319.1}
   m_SizeDelta: {x: 349, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &884570898
@@ -3718,7 +3719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -134.5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -231, y: 83.1}
+  m_AnchoredPosition: {x: -712, y: -132}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1058750442
@@ -5857,7 +5858,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -490.9, y: 33.7}
+  m_AnchoredPosition: {x: -490.9, y: 99.90001}
   m_SizeDelta: {x: 385.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1517451722
@@ -6323,7 +6324,7 @@ MonoBehaviour:
 
 
     If you fail to meet the goals
-    of the client, you lose! Start again from the beginning!'
+    of the client, you lose! Try again, you got this!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7282,15 +7283,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4576483528891550753, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_text
-      value: 'Bonus points to CPU/GPU, Case, Cooler, Power Supply IF they fit well!
+      value: 'FOCUS IS ON:
 
 
-        Otherwise:
-        Lose points!'
+        CPU/GPU, Power Supply, Cooler, Speaker!
+
+
+        (Cards
+        that fit well make the client happier than usual! Cards that don''t make
+        the client sadder!)
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4576483528891550753, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_fontSize
-      value: 0.18
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4576483528891550753, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_margin.w
@@ -7318,19 +7325,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4576483528891550753, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_fontSizeBase
-      value: 0.18
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4576483528891550753, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -7017915748580712785, guid: b08be5412e8a3fa42b5cb9751f8c2641, type: 2}
+    - target: {fileID: 4576483528891550753, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576483528891550753, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4700414633229254268, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_text
-      value: "Binary System \nUpdate"
+      value: Desert Island Gaming
       objectReference: {fileID: 0}
     - target: {fileID: 4700414633229254268, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_fontSize
-      value: 0.34
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4700414633229254268, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_margin.z
@@ -7342,19 +7357,23 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b08be5412e8a3fa42b5cb9751f8c2641, type: 2}
     - target: {fileID: 4700414633229254268, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_fontSizeBase
-      value: 0.34
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4700414633229254268, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -7017915748580712785, guid: b08be5412e8a3fa42b5cb9751f8c2641, type: 2}
     - target: {fileID: 5310172120356070682, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 199.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310172120356070682, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.459
+      value: 2.445
       objectReference: {fileID: 0}
     - target: {fileID: 5310172120356070682, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.69
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 6005101045788814722, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: category_class
@@ -7362,7 +7381,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d9946b1f6e2dd374792284687d4543a9, type: 2}
     - target: {fileID: 6713895285852728440, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 199.54
+      value: 199.69
       objectReference: {fileID: 0}
     - target: {fileID: 6713895285852728440, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_SizeDelta.y
@@ -7370,11 +7389,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6713895285852728440, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.081
+      value: 2.23
       objectReference: {fileID: 0}
     - target: {fileID: 6713895285852728440, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.5
+      value: -1.06
       objectReference: {fileID: 0}
     - target: {fileID: 8339632814906001049, guid: 8804e6aa54ef60f428c60b859c14dccc, type: 3}
       propertyPath: m_RootOrder
@@ -8667,8 +8686,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.5, y: 170.4}
-  m_SizeDelta: {x: 220, y: 50}
+  m_AnchoredPosition: {x: -351, y: -86}
+  m_SizeDelta: {x: 473.5, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986962646
 MonoBehaviour:
@@ -8690,11 +8709,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'If you''re stuck, use a lifeline!
+  m_text: 'If you''re stuck, use one of the three lifelines!
 
 
-    You only get one of each per run,
-    so use them wisely!'
+    You only get one
+    of each per run, so use them wisely!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -10,6 +10,7 @@ public class DragAndDrop : MonoBehaviour
     [SerializeField] private Transform dropPos;
     public GameObject tempObject;
     public bool isPlaced = false;
+    public bool hittingCard = false;
     public bool dontMove = false;
     GameManager gm;
 
@@ -63,6 +64,9 @@ public class DragAndDrop : MonoBehaviour
         {
             this.gameObject.transform.position = dropPos.position;
             this.gameObject.transform.position -= new Vector3(0, 0, 0.1f);
+        }
+        if(hittingCard == true)
+        {
             isPlaced = true;
         }
     }
@@ -80,11 +84,13 @@ public class DragAndDrop : MonoBehaviour
         {
             dropPos = other.gameObject.transform;
             tempObject = other.gameObject;
+            hittingCard = true;
         }
     }
 
     void OnTriggerExit2D()
     {
         dropPos = this.gameObject.transform;
+        hittingCard = false;
     }
 }

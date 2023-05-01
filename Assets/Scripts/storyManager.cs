@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class storyManager : MonoBehaviour
 {
     int progress = 0;
-    public Image background;
+    public GameObject Text1;
+    public GameObject Text2;
     public Sprite newImage;
     public Animator animator;
 
@@ -23,7 +24,8 @@ public class storyManager : MonoBehaviour
         if(progress == 0)
         {
             progress++;
-            background.GetComponent<Image>().sprite = newImage;
+            Text1.SetActive(false);
+            Text2.SetActive(true);
             Destroy(GameObject.FindGameObjectWithTag("clickText"));
         }
         else if(progress == 1)

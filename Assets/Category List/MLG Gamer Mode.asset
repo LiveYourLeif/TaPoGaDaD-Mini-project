@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb38e74c12fb2504481b18e43d394fd7, type: 3}
   m_Name: MLG Gamer Mode
   m_EditorClassIdentifier: 
-  category: MLG Gamer Mode
-  description: 'Bonus points to Keyboard, CPU/GPU, Speaker, Mouse IF they fit well!
+  category: "MLG Gamer \nMode"
+  description: 'FOCUS IS ON:
 
 
-    Otherwise:
-    Lose points!'
+    Keyboard, CPU/GPU, Speaker, Mouse!
+
+
+    (Cards
+    that fit well make the client happier than usual! Cards that don''t make the
+    client sadder!)'
   conditionType: 0

@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         c.updateCategory();
 
         ShuffleDeck();
-        for(int i = 0; i < 8; i++)
+        for(int i = 0; i < 6; i++)
         {
             DrawCard();
         }
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         {
             if (moveCardSlots == true)
             {
-                hand[cardSlotIndex].transform.position += new Vector3(0, 20f, 0) * Time.deltaTime;
+                hand[cardSlotIndex].transform.position += new Vector3(0, 15f, 0) * Time.deltaTime;
                 if (hand[cardSlotIndex].transform.position.y >= -3.3)
                 {
                     if (cardSlotIndex < cardslots.Length - 1)
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         {
             foreach (Card card in hand)
             {
-                if (card.GetComponent<DragAndDrop>().isPlaced == false && card.transform.position.y > -75)
+                if (card.GetComponent<DragAndDrop>().isPlaced == false && card.transform.position.y > -40)
                 {
                     card.transform.position -= new Vector3(0, 20f, 0) * Time.deltaTime;
 

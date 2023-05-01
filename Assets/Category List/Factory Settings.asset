@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb38e74c12fb2504481b18e43d394fd7, type: 3}
   m_Name: Factory Settings
   m_EditorClassIdentifier: 
-  category: Factory Settings
-  description: No change.
+  category: 'Factory
+
+    Settings'
+  description: No change!
   conditionType: 8

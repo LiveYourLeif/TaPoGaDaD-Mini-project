@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb38e74c12fb2504481b18e43d394fd7, type: 3}
   m_Name: Urban Gaming
   m_EditorClassIdentifier: 
-  category: Urban Gaming
-  description: 'Bonus points to Speaker, CPU/GPU, Keyboard, Cooler IF they fit well!
+  category: 'Urban
+
+    Gaming'
+  description: 'FOCUS IS ON:
 
 
-    Otherwise:
-    Lose points!'
+    Speaker, CPU/GPU, Keyboard, Cooler!
+
+
+    (Cards
+    that fit well make the client happier than usual! Cards that don''t make the
+    client sadder!)'
   conditionType: 5

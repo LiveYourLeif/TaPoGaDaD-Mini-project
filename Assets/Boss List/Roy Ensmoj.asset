@@ -16,7 +16,7 @@ MonoBehaviour:
 
     ENSMOJ'
   bossDesign: {fileID: 21300000, guid: 137b62e3d0c2a8c469f0c1e7dea1e86a, type: 3}
-  targetScore: 10
+  targetScore: 12
   pcPart1: CPU/GPU
   pcPart2: Cooler
   pcPart3: Keyboard
