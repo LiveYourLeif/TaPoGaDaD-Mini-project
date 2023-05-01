@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
     int helpIndex = 0;
     private AudioSource aud;
     bool once = true;
-    bool addOneCard = true;
 
     void Start()
     {
@@ -53,17 +52,6 @@ public class GameManager : MonoBehaviour
         new_c = categories[Random.Range(0, categories.Count)];
         c.category_class = new_c;
         c.updateCategory();
-
-        /*foreach(Card usedCard in prog.usedCards)
-        {
-            foreach(Card card in deck)
-            {
-                if(usedCard == card)
-                {
-                    deck.Remove(card);
-                }
-            }
-        }*/
 
         ShuffleDeck();
         for(int i = 0; i < 6; i++)
@@ -102,19 +90,6 @@ public class GameManager : MonoBehaviour
 
         if (cardDown == true)
         {
-            /*if(addOneCard == true)
-            {
-                foreach (Card card in hand)
-                {
-                    if (card.GetComponent<DragAndDrop>().isPlaced == true)
-                    {
-                        prog.usedCards.Add(card);
-                    }
-                }
-            }
-            addOneCard = false;*/
-            
-            
             foreach (Card card in hand)
             {
                 if (card.GetComponent<DragAndDrop>().isPlaced == false && card.transform.position.y > -40)
@@ -131,6 +106,7 @@ public class GameManager : MonoBehaviour
         if(deck.Count >= 1)
         {
             Card randCard = deck[Random.Range(0, deck.Count)];
+
             for (int i = 0; i < availableCardSlots.Length; i++)
             {
                 if(availableCardSlots[i] == true)
